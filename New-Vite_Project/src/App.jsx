@@ -11,9 +11,16 @@ import EventComponent2 from './events/EventComponent2';
 import MyUseStateComponent from './sandbox/MyUseStateComponent';
 import CounterComponent from './sandbox/CounterComponent';
 import PrintComponent from './HW/30.7/PrintComponent';
+import Todolist from './sandbox/Todolist';
+import MyFormExample from './sandbox/MyFormExample';
+import PageHeader from './Components/pages/PageHeader';
+import CardsPage from './Components/pages/CardsPage';
+import AboutPage from './Pages/AboutPage';
+import Router from './routes/Router';
+import { BrowserRouter } from 'react-router-dom';
 
 export default function App() {
-  let user = { firstName: "Ohav", lastName: "Shemesh" }
+/*   let user = { firstName: "Ohav", lastName: "Shemesh" }
   let People = [
     { firstName: "David", lastName: "Baruch", _id: "518" },
     { firstName: "Alice", lastName: "Johnson", _id: "45" },
@@ -22,9 +29,11 @@ export default function App() {
     { firstName: "Eve", lastName: "Davis", _id: "142" },
     { firstName: "Frank", lastName: "Miller", _id: "205" }
   ];
-  return (
+ */  return (
     <>
-      <PrintComponent />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   )
 }

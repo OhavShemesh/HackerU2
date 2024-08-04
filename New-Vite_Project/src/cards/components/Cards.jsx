@@ -82,7 +82,7 @@ export default function Cards() {
     console.log(id + " Liked");
   }
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
       {CardsArr.map((card) =>
         <CardComponent handleEdit={handleEdit} handleDelete={handleDelete} handleLike={handleLike} card={card} key={card._id} />
       )}
